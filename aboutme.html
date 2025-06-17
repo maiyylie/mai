@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('11.jpg');
+      background-attachment: fixed;
+      background-position: top center;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      background-image: url('11.jpg');
+      background-attachment: fixed;
+      background-position: top center;
+      background-size: cover;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .nav-button {
+      background-color: #BC8F8F;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
+      margin: 5px;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #a17474;
+      transform: translateY(-2px);
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      color: black;
+    }
+
+    section img {
+      height: 260px;
+      width: 400px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 4px solid #f2d5d5;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    section ul {
+      list-style-type: none;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    .music-section {
+      padding: 10px 20px;
+      margin-top: 30px;
+      background-color: #fff3f3;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #333;
+      text-align: center;
+    }
+
+    .music-player {
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 350px;
+      margin: 30px auto;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 1.0);
+    }
+
+    .music-player img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .song-title {
+      font-size: 20px;
+      margin: 10px 0 5px;
+      color: #C54B8C;
+      font-weight: bold;
+    }
+
+    .song-artist {
+      color: #C54B8C;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    audio {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #BC8F8F;
+      color: black;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Me ⋅˚₊‧ ୨୧ ‧₊˚ ⋅</h1>
+  </header>
+
+  <nav>
+    <a href="home.html" class="nav-button">HOME</a>
+    <a href="aboutme.html" class="nav-button">ABOUT ME</a>
+    <a href="education.html" class="nav-button">EDUCATION</a>
+    <a href="family.html" class="nav-button">FAMILY</a>
+    <a href="experience.html" class="nav-button">EXPERIENCE</a>
+    <a href="friends.html" class="nav-button">FRIENDS</a>
+    <a href="hobby.html" class="nav-button">HOBBY</a>
+    <a href="gallery.html" class="nav-button">GALLERY</a>
+  </nav>
+
+  <section>
+    <img src="meeee.jpg" alt="Photo of me" style="display:block; margin:auto;">
+
+    <h2>Hello! I'm Mai 🌸</h2>
+    <p>
+      My name is Siti Nur Maisarah binti Mat Jusoh and i am 21 years old.My birthday is on 14 July 2004.I was born at Hospital Sultanah Aminah,Johor Bahru.
+      I’m a final year student of Information Management at UiTM MACHANG. Currently I was given a task to create my own personal website. I am so excited since this is my first time doing it from scratch. For your information, I am a quite introverted person unless I meet my people. But once I know that person, I can talk and engage with them smoothly. My favorite color is pink, and I believe in spreading kindness and positivity wherever I go.
+      This website is a small corner of my world — I hope you enjoy exploring it!
+    </p>
+
+    <div class="music-section">
+      <h3><u>Some of My Favorite Songs 🎵</u></h3>
+
+      <div class="music-player">
+        <img src="jimin.jpg" alt="Album Art">
+        <div class="song-title">Like Crazy</div>
+        <div class="song-artist">Jimin - BTS</div>
+        <audio controls>
+          <source src="Like crazy.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="music-player">
+        <img src="tate.jpg" alt="Album Art">
+        <div class="song-title">It's ok I'm ok</div>
+        <div class="song-artist">Tate McRae</div>
+        <audio controls>
+          <source src="tate.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="music-player">
+        <img src="hott.jpg" alt="Album Art">
+        <div class="song-title">HOT</div>
+        <div class="song-artist">Le Sserafim</div>
+        <audio controls>
+          <source src="HOT.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="music-player">
+        <img src="cas album.jpg" alt="Album Art">
+        <div class="song-title">Apocalypse</div>
+        <div class="song-artist">Cigarettes After Sex</div>
+        <audio controls>
+          <source src="apocalypse.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>All rights reserved by Maiyyliecute, 2025</p>
+  </footer>
+</body>
+</html>
