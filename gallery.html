@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('11.jpg');
+      background-attachment: fixed;
+      background-position: top center;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+     background-image: url('11.jpg');
+      background-attachment: fixed;
+      background-position: top center;
+      background-size: cover;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .nav-button {
+      background-color: #BC8F8F;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
+      margin: 5px;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #a17474;
+      transform: translateY(-2px);
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      color: black;
+      text-align: center;
+    }
+
+    .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+      max-width: 500px;
+      max-height: 350px;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from { opacity: .4 }
+      to { opacity: 1 }
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #BC8F8F;
+      color: black;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .audio-center {
+  text-align: center;
+  margin: 20px 0;
+}
+
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <h1>My Photo Gallery 📸</h1>
+  </header>
+
+  <nav>
+    <a href="home.html" class="nav-button">HOME</a>
+    <a href="aboutme.html" class="nav-button">ABOUT ME</a>
+    <a href="education.html" class="nav-button">EDUCATION</a>
+    <a href="family.html" class="nav-button">FAMILY</a>
+    <a href="experience.html" class="nav-button">EXPERIENCE</a>
+    <a href="friends.html" class="nav-button">FRIENDS</a>
+    <a href="hobby.html" class="nav-button">HOBBY</a>
+    <a href="gallery.html" class="nav-button">GALLERY</a>
+  </nav>
+
+  <section>
+    <h2>Memories That I Cherish 💕</h2>
+    <p>Enjoy this slideshow of my favorite moments:</p>
+
+    <div class="slideshow-container">
+      <img class="mySlides fade" src="friends2.jpg" alt="Photo 1">
+      <img class="mySlides fade" src="boy.jpg" alt="Photo 2">
+      <img class="mySlides fade" src="sunset.jpg" alt="Photo 3">
+      <img class="mySlides fade" src="hangingout.jpg" alt="Photo 4">
+      <img class="mySlides fade" src="dabong.jpg" alt="Photo 5">
+      <img class="mySlides fade" src="piya.jpg" alt="Photo 6">
+      <img class="mySlides fade" src="22.jpg" alt="Photo 7">
+      <img class="mySlides fade" src="pantai1.jpg" alt="Photo 8">
+      <img class="mySlides fade" src="panna.jpg" alt="Photo 9">
+      <img class="mySlides fade" src="kroni.jpg" alt="Photo 10">
+      <img class="mySlides fade" src="friends3.jpg" alt="Photo 11">
+      <img class="mySlides fade" src="kereta.jpg" alt="Photo 12">
+    </div>
+  </section>
+ 
+
+  <div class="audio-center">
+    <audio controls autoplay>
+      <source src="maria.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <footer>
+    <p>All rights reserved by Maiyyliecute, 2025</p>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("mySlides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+  </script>
+
+</body>
+</html>
